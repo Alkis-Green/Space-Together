@@ -1,0 +1,54 @@
+.Container {
+  width: 95%;
+  margin: 0 auto 2em auto;
+}
+
+.Container div {
+  height: 50vh;
+  width: 100%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.p1 {
+  padding: 0.4em;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    margin: 0 auto 0.8em auto;
+  }
+
+  .Container div {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .p1 {
+    padding: 0.2em;
+  }
+
+  .img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Container {
+    margin: 0 auto 0.4em auto;
+  }
+
+  .Container div {
+    height: 45vh;
+    width: 100%;
+  }
+
+  .img {
+    border-radius: 8px;
+  }
+}

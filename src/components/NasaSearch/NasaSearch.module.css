@@ -1,0 +1,23 @@
+.GalleryContainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  align-items: end;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .GalleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .GalleryContainer {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2em;
+  }
+}

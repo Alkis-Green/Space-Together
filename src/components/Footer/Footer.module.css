@@ -1,0 +1,140 @@
+.FooterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+
+.LeftCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftCol p {
+  padding: 0.5em;
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.RightCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.RightCol a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.2em;
+}
+
+.Icon {
+  height: 28px;
+  width: 28px;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.Icon:nth-child(odd):hover {
+  color: #0e7c7b;
+}
+.Icon:nth-child(odd):hover {
+  color: #e3b505;
+}
+
+.CopyrightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+  /* width: 60%; */
+  margin: 0 auto;
+
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .FooterContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .FooterWrapper {
+    padding: 0.5em;
+  }
+
+  .LeftCol p {
+    padding: 0.3em;
+    font-size: 18px;
+    letter-spacing: 1.7px;
+  }
+
+  .RightCol {
+    padding: 0.3em;
+  }
+
+  .RightCol a {
+    padding: 0.2em;
+  }
+
+  .Icon {
+    height: 24px;
+    width: 24px;
+    margin: 0.4em;
+  }
+
+  .CopyrightContainer {
+    width: 85%;
+    text-align: center;
+    letter-spacing: 1.7px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .FooterContainer {
+    width: 80%;
+    margin: 0.8em auto;
+  }
+
+  .FooterWrapper {
+    padding: 0em;
+  }
+
+  .LeftCol p {
+    font-size: 16px;
+    letter-spacing: 1.8px;
+  }
+
+  .RightCol a {
+    padding: 0.3em;
+  }
+
+  .Icon {
+    height: 24px;
+    width: 24px;
+    margin: 0.25em;
+  }
+
+  .CopyrightContainer {
+    width: 85%;
+    text-align: center;
+    letter-spacing: 1.8px;
+  }
+}

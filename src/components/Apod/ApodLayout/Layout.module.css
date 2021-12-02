@@ -1,0 +1,196 @@
+.Container {
+  height: 100%;
+  width: 100%;
+  margin-top: 2.5em;
+  margin-bottom: 3.5em;
+
+  display: flex;
+  justify-content: center;
+}
+
+.BodyContainer {
+  display: flex;
+}
+
+.LeftColumn {
+  width: 50%;
+  height: 100%;
+}
+
+.Title {
+  padding: 1.5em 0.8em 0 0.8em;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ParagraphContainer {
+  width: 92%;
+  margin: 0 auto;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1.8px;
+  text-align: justify;
+}
+
+.RightColumn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageContainer {
+  width: 95%;
+}
+
+.ImageOfTheDay {
+  height: 100%;
+  width: 100%;
+}
+
+.ImageOfTheDay:hover {
+  cursor: pointer;
+}
+
+.dateTitle {
+  display: flex;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.6px;
+  margin-top: 6px;
+}
+
+.dateTitle * {
+  margin-right: 0.5em;
+}
+
+.dateTitle span {
+  font-weight: bold;
+}
+
+.Copyright {
+  display: flex;
+}
+
+.spanInfo {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .Title {
+    font-size: 26px;
+  }
+
+  .Container {
+    width: 90%;
+    margin: 0;
+  }
+
+  .BodyContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .RightColumn {
+    height: 400px;
+    width: 100%;
+  }
+
+  .imageContainer {
+    height: 70%;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .ImageOfTheDay {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .dateTitle {
+    width: 90%;
+    margin: 0 auto;
+    letter-spacing: 0.8px;
+    margin-top: 4px;
+    font-size: 13px;
+  }
+
+  .spanInfo {
+    font-size: 10px;
+  }
+
+  .LeftColumn {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ParagraphContainer {
+    padding: 0.1em;
+    margin: 0 auto 3em auto;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Title {
+    font-size: 20px;
+  }
+
+  .Container {
+    width: 90%;
+    margin: 0;
+  }
+
+  .BodyContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .RightColumn {
+    height: 350px;
+    width: 100%;
+  }
+
+  .imageContainer {
+    height: 70%;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .ImageOfTheDay {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .dateTitle {
+    width: 90%;
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+
+  .spanInfo {
+    font-size: 8px;
+  }
+
+  .ParagraphContainer {
+    font-size: 15px;
+    letter-spacing: 0.8px;
+  }
+}

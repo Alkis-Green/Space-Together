@@ -1,0 +1,83 @@
+.Info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 350px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Title {
+  padding: 0.5em;
+  font-family: "Orbitron", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.List {
+  list-style-type: none;
+  letter-spacing: 0.5px;
+}
+
+.List li {
+  padding: 0.35em;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .Info {
+    width: 200px;
+    min-height: 150px;
+  }
+
+  .Title {
+    padding: 0.4em;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+  }
+
+  .List {
+    list-style-type: none;
+  }
+
+  .List li {
+    padding: 0.25em;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Info {
+    width: 200px;
+    min-height: 150px;
+  }
+
+  .Title {
+    padding: 0.2em;
+    font-size: 18px;
+  }
+
+  .List {
+    list-style-type: none;
+  }
+
+  .List li {
+    padding: 0.15em;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}

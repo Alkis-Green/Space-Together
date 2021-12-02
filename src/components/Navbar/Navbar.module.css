@@ -1,0 +1,52 @@
+.nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #1f1d20; */
+  background-color: #1d1d1d;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo h1 {
+  background-image: linear-gradient(100deg, #e3b505, #0e7c7b, #f4eded);
+  background-clip: text;
+  color: transparent;
+  font-family: "Bungee Outline", cursive;
+  font-size: 34px;
+}
+
+.logo {
+  margin-right: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    height: 70px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+  .logo h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav {
+    height: 70px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+}

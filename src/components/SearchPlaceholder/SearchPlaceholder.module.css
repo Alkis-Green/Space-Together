@@ -1,0 +1,41 @@
+.SearchResultContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchResultInfo {
+  padding: 1em 3em 3em 3em;
+}
+
+.SearchPlaceHolder {
+  opacity: 0.55;
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 576px) {
+  .SearchResultContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SearchResultInfo {
+    padding: 0em 3em 3em 3em;
+  }
+
+  .SearchPlaceHolder {
+    opacity: 0.55;
+    font-family: "Poiret One", cursive;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}

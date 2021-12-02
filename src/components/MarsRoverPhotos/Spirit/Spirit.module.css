@@ -1,0 +1,221 @@
+.Container {
+  width: 100%;
+  height: 100%;
+}
+
+.DateContainer {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Date {
+  font-size: 21px;
+  padding: 1.5em 0 0 0;
+}
+
+.SelectDate {
+  margin-right: 0.5em;
+  background-image: linear-gradient(100deg, #e3b505, #0e7c7b);
+  background-clip: text;
+  color: transparent;
+}
+
+.DateRange {
+  text-align: center;
+  font-size: 14px;
+}
+
+.Date input {
+  padding: 0.7em;
+  margin-bottom: 2em;
+  font-size: 14px;
+  width: 55%;
+  border: 1px solid #1f1d20;
+  border-radius: 5em;
+}
+
+.SearchResultContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .SearchResultInfo {
+      padding: 1em 3em 3em 3em;
+    } */
+
+.SearchPlaceHolder {
+  opacity: 0.55;
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.BtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2em 0;
+}
+
+.Btn1 {
+  margin-right: 2em;
+  min-width: 10%;
+  padding: 0.6em;
+  font-size: 15px;
+  border: 1px solid #625d64;
+  border-radius: 1em;
+  /* background-image: linear-gradient(100deg, #e3b505, #0e7c7b, #f4eded);
+    background-clip: text;
+    color: transparent; */
+  /* font-family: "Poiret One", cursive; */
+  font-family: "Orbitron", sans-serif;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+.Span {
+  font-size: 16px;
+  font-family: "Poiret One", cursive;
+  font-weight: 700;
+}
+
+.Btn2 {
+  margin-left: 2em;
+  min-width: 10%;
+  padding: 0.6em;
+  font-size: 15px;
+  border: 1px solid #625d64;
+  border-radius: 1em;
+  /* background-image: linear-gradient(100deg, #e3b505, #0e7c7b, #f4eded);
+    background-clip: text;
+    color: transparent; */
+  /* font-family: "Poiret One", cursive; */
+  font-family: "Orbitron", sans-serif;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+.InfoContainer {
+  font-family: "Poiret One", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.InfoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.InfoWrapper .span {
+  margin-right: 1em;
+}
+
+.photoInfoContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.photoWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .DateContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Date {
+    font-size: 20px;
+  }
+
+  .Date input {
+    padding: 0.6em;
+    margin-bottom: 2em;
+    font-size: 14px;
+    width: 55%;
+  }
+
+  .InfoContainer {
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .InfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  .InfoWrapper .span {
+    margin-right: 1.5em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Date {
+    font-size: 17px;
+  }
+
+  .DateRange {
+    font-size: 9.5px;
+    font-weight: bold;
+  }
+
+  .Date input {
+    padding: 0.5em;
+    margin-bottom: 2em;
+    font-size: 13px;
+    width: 55%;
+  }
+
+  .InfoContainer {
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .InfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 11.5px;
+    letter-spacing: 1px;
+  }
+
+  .InfoWrapper .span {
+    margin-right: 1em;
+  }
+}

@@ -1,0 +1,45 @@
+.Container {
+  width: 95%;
+  height: 80px;
+  margin: 0 0 0.9em 0;
+  display: flex;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
+
+.Wrapper {
+  width: 95%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-content: center;
+  place-items: center;
+
+  font-family: "Poiret One", cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .Container {
+    width: 90%;
+    height: 90px;
+    margin: 0 0 1.2em 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Container {
+    margin: 0 0 0.2em 0;
+  }
+
+  .Wrapper {
+    width: 95%;
+    font-size: 13px;
+    margin: 0 auto;
+  }
+}

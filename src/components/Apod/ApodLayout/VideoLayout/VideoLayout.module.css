@@ -1,0 +1,40 @@
+.VideoContainer {
+  width: 100%;
+}
+
+.VideoOfTheDay {
+  margin-top: 3em;
+  height: 380px;
+  width: 600px;
+  padding-bottom: 1em;
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .VideoContainer {
+    height: 190px;
+    width: 100%;
+  }
+
+  .VideoOfTheDay {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .VideoContainer {
+    height: 150px;
+    width: 100%;
+  }
+
+  .VideoOfTheDay {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+}

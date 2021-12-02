@@ -1,0 +1,68 @@
+.Container {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.Container h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 44px;
+  padding-bottom: 0.65em;
+  text-align: center;
+}
+
+.Container p {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .Container h1 {
+    font-size: 32px;
+    padding: 1.5em 0;
+  }
+
+  .Container p {
+    font-size: 18px;
+    letter-spacing: 0.11em;
+    line-height: 1.7em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.2em;
+    margin-bottom: 0.3em;
+  }
+
+  .Container h1 {
+    font-size: 28px;
+    padding: 1em 0 1.5em 0;
+  }
+
+  .Container p {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    line-height: 1.9em;
+  }
+}

@@ -1,0 +1,62 @@
+.Background {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollableContainer {
+  overflow: scroll;
+  border-radius: 8px;
+  background: #1f1d20;
+  /* height: 600px; */
+}
+
+.ModalWrapper {
+  width: 900px;
+  height: 550px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  z-index: 10;
+  border-radius: 6px;
+}
+
+.DescriptionContainer {
+  margin-top: 0.5em;
+  padding: 1.5em 2em;
+}
+
+.Description {
+  color: #f4eded;
+  font-size: 20px;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  line-height: 1.4em;
+}
+
+.ModalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* .ModalWrapper:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 20px solid whitesmoke;
+  opacity: 0.6;
+  clear: both;
+} */

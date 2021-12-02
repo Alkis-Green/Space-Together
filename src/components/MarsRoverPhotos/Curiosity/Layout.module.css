@@ -1,0 +1,282 @@
+.PageContainer {
+  height: 100%;
+  width: 100%;
+  font-family: "Poiret One", cursive;
+}
+
+.arrowFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowLeft {
+  width: 3vmin;
+  height: 3vmin;
+  background: transparent;
+  border-top: 0.5vmin solid;
+  border-right: 0.5vmin solid;
+  transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrowRight {
+  width: 3vmin;
+  height: 3vmin;
+  background: transparent;
+  border-top: 0.5vmin solid;
+  border-right: 0.5vmin solid;
+  transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.camerasContainer {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.FhazCamHeader {
+  display: flex;
+  align-items: center;
+  padding: 0 0 1.2em 0;
+}
+
+.FhazCamHeader h2 {
+  margin-right: 0.5em;
+}
+
+.FhazCamHeader span {
+  font-weight: bold;
+}
+
+.fhazContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.FhazCam {
+  padding: 0 0 1em 0;
+}
+
+.img {
+  height: 200px;
+  width: 100%;
+
+  padding: 0 0.2em;
+
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.img:hover {
+  transform: scale(1.02);
+}
+
+.NoData {
+  height: 60px;
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  opacity: 0.35;
+}
+
+.Fade {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* //////////////////// MEDIA QUERIES //////////////////// */
+
+@media screen and (max-width: 768px) {
+  .arrowLeft,
+  .arrowRight {
+    display: none;
+  }
+
+  .camerasContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .FhazCamHeader {
+    display: flex;
+    align-items: center;
+    padding: 0 0 1.5em 0;
+  }
+
+  .FhazCamHeader h2 {
+    margin-right: 0.8em;
+    font-size: 20px;
+  }
+
+  .FhazCamHeader span {
+    font-weight: bold;
+  }
+
+  .fhazContainer {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .FhazCam {
+    padding: 0 0 0.5em 0;
+  }
+
+  .img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+
+  .img:hover {
+    transform: scale(1);
+  }
+
+  .NoData {
+    height: 60px;
+    width: 100%;
+    margin-top: 2em;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .camerasContainer {
+    width: 90%;
+  }
+
+  .FhazCamHeader {
+    padding: 0 0 0.5em 0;
+  }
+
+  .FhazCamHeader h2 {
+    margin-right: 0.1em;
+    font-size: 16px;
+  }
+
+  .FhazCamHeader span {
+    font-weight: bold;
+    font-size: 13.5px;
+  }
+
+  .FhazCam {
+    padding: 0 0 0.2em 0;
+  }
+
+  .img {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+
+  .img:hover {
+    transform: scale(1);
+  }
+
+  .NoData {
+    height: 40px;
+    width: 100%;
+    margin-top: 2em;
+
+    font-size: 14.5px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+}
